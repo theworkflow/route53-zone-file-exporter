@@ -12,16 +12,18 @@ Export Route53 hosted zone record sets into a zone file
 
 ### CLI Usage
 
-  Usage: route53-zone-file-exporter [options]
+```
+Usage: route53-zone-file-exporter [options]
 
-  Options:
-    -V, --version                        output the version number
-    -z, --zoneId <hosted-zone-id>        Route53 hosted zone ID
-    --hostedZoneId <hosted-zone-id>      Route53 hosted zone ID (same as -z flag)
-    -o --output <path>                   Output path to store zone file
-    --accessKeyId <accessKeyId>          AWS accessKeyId
-    --secretAccessKey <secretAccessKey>  AWS secretAccessKey
-    -h, --help                           output usage information
+Options:
+  -V, --version                        output the version number
+  -z, --zoneId <hosted-zone-id>        Route53 hosted zone ID
+  --hostedZoneId <hosted-zone-id>      Route53 hosted zone ID (same as -z flag)
+  -o --output <path>                   Output path to store zone file
+  --accessKeyId <accessKeyId>          AWS accessKeyId
+  --secretAccessKey <secretAccessKey>  AWS secretAccessKey
+  -h, --help                           output usage information
+```
 
 ### API Usage
 
