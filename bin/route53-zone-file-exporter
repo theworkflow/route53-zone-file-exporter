@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const program = require('commander')
+
+const exporter = require('../src')
+const { version } = require('../package.json')
+
+program
+  .version(version)
+  .option(
+    '-z, --zoneId <hosted-zone-id>',
+    'Route53 hosted zone ID')
+  .option(
+    '--hostedZoneId <hosted-zone-id>',
+    'Route53 hosted zone ID (same as -z flag)'
+  )
+  .option(
+    '-o --output <path>',
+    'Output path to store zone file')
+  .option(
+    '--accessKeyId <accessKeyId>',
+    'AWS accessKeyId')
+  .option(
+    '--secretAccessKey <secretAccessKey>',
+    'AWS secretAccessKey')
+  .parse(process.argv)
+
+let awsConfig = {}
+const options = {
+  zoneId: program.zoneId || program.hostedZoneId,
+  ttl: program.ttl || 3600,
+  output: program.output || null
+}
+
+if (program.accessKeyId) awsConfig.accessKeyId = program.accessKeyId
+if (program.secretAccessKey) awsConfig.secretAccessKey = program.secretAccessKey
+
+console.log('Performing export...')
+
+exporter(options, awsConfig)
+  .then(() => {
+    console.log('Export completed')
+    process.exit(0)
+  })
+  .catch((err) => {
+    console.error(err.message)
+    return process.exit(1)
+  })

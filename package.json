@@ -1,0 +1,40 @@
+{
+  "name": "route53-zone-file-exporter",
+  "version": "0.0.0",
+  "description": "Export AWS Route53 hosted zone data as a zone file",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "route53-zone-file-exporter": "./bin/route53-zone-file-exporter"
+  },
+  "dependencies": {
+    "aws-sdk": "2.503.0",
+    "commander": "3.0.1",
+    "zone-file": "1.0.0"
+  },
+  "devDependencies": {
+    "code": "5.2.4",
+    "lab": "18.0.2",
+    "sinon": "7.4.0",
+    "standard": "13.1.0"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && npm run unit",
+    "unit": "lab -cv --threshold 100"
+  },
+  "keywords": [
+    "aws",
+    "zone",
+    "file",
+    "zonefile",
+    "route53",
+    "export",
+    "exporter",
+    "hosted"
+  ],
+  "author": "Jeremiah Harlan <jeremiah.harlan@gmail.com>",
+  "license": "MIT"
+}
