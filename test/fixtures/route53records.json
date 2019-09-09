@@ -1,0 +1,107 @@
+{
+  "A": [
+    {
+      "AliasTarget": {
+        "HostedZoneId": "Z2FDTNDATAQYW2",
+        "EvaluateTargetHealth": false,
+        "DNSName": "d1mylymyxdpqdy.cloudfront.net."
+      },
+      "Type": "A",
+      "Name": "olay.com."
+    },
+    {
+      "ResourceRecords": [
+        {
+          "Value": "208.70.143.2"
+        }
+      ],
+      "Type": "A",
+      "Name": "canada.olay.com.",
+      "TTL": 300
+    }
+  ],
+  "MX": [
+    {
+      "ResourceRecords": [
+        {
+          "Value": "10 bbhm.ex.exmaple.com."
+        }
+      ],
+      "Type": "MX",
+      "Name": "example.com.",
+      "TTL": 300
+    }
+  ],
+  "NS": [
+    {
+      "ResourceRecords": [
+        {
+          "Value": "ns-869.awsdns-44.net."
+        },
+        {
+          "Value": "ns-2018.awsdns-60.co.uk."
+        },
+        {
+          "Value": "ns-54.awsdns-06.com."
+        },
+        {
+          "Value": "ns-1140.awsdns-14.org."
+        }
+      ],
+      "Type": "NS",
+      "Name": "olay.com.",
+      "TTL": 172800
+    }
+  ],
+  "SOA": [
+    {
+      "ResourceRecords": [
+        {
+          "Value": "ns-869.awsdns-44.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+        }
+      ],
+      "Type": "SOA",
+      "Name": "olay.com.",
+      "TTL": 900
+    }
+  ],
+  "TXT": [
+    {
+      "ResourceRecords": [
+        {
+          "Value": "\"google-site-verification=1tcMSeburb9qdWyNXEbWx17PPOa1JoADJOZ9-iaPlDg\""
+        },
+        {
+          "Value": "\"google-site-verification=B_NPUcdJ9Ncd8JlNXtFW-GfIUdcfGcM3KH5rhnq71RQ\""
+        },
+        {
+          "Value": "\"google-site-verification=pxYiqz1xdJx5anoPJCxBhXt80BPShiqzbeEhwhwCRWQ\""
+        }
+      ],
+      "Type": "TXT",
+      "Name": "olay.com.",
+      "TTL": 300
+    }
+  ],
+  "CNAME": [
+    {
+      "AliasTarget": {
+        "HostedZoneId": "Z2DTRSIKE5XMZF",
+        "EvaluateTargetHealth": false,
+        "DNSName": "futureyou.olay.com."
+      },
+      "Type": "CNAME",
+      "Name": "www.futureyou.olay.com."
+    },
+    {
+      "ResourceRecords": [
+        {
+          "Value": "_d3272163d1e7b5046236bb47a7f94131.tljzshvwok.acm-validations.aws."
+        }
+      ],
+      "Type": "CNAME",
+      "Name": "_b891f66e4e09a70947ed968f5ae90ea4.olay.com.",
+      "TTL": 600
+    }
+  ]
+}
