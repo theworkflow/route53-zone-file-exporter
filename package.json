@@ -1,6 +1,6 @@
 {
   "name": "@theworkflow/route53-zone-file-exporter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Export AWS Route53 hosted zone data as a zone file",
   "main": "index.js",
   "directories": {
