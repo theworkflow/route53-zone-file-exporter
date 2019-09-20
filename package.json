@@ -1,6 +1,6 @@
 {
   "name": "route53-zone-file-exporter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Export AWS Route53 hosted zone data as a zone file",
   "main": "src/index.js",
   "directories": {
