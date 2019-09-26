@@ -1,7 +1,7 @@
 # route53-zone-file-exporter
 
 [![version](https://img.shields.io/npm/v/route53-zone-file-exporter.svg?style=flat-square)][version]
-[![build](https://img.shields.io/travis/theworkflow/route53-zone-file-exporter/master.svg?style=flat-square)][build]
+[![build](https://img.shields.io/circleci/build/github/theworkflow/route53-zone-file-exporter?style=flat-square)][build]
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
 
 Export Route53 hosted zone record sets into a zone file
@@ -53,5 +53,5 @@ Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md
 [MIT](LICENSE)
 
 [version]: https://www.npmjs.com/package/route53-zone-file-exporter
-[build]: https://travis-ci.org/theworkflow/route53-zone-file-exporter
+[build]: https://circleci.com/gh/theworkflow/route53-zone-file-exporter
 [license]: https://raw.githubusercontent.com/theworkflow/route53-zone-file-exporter/master/LICENSE
