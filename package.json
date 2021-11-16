@@ -10,7 +10,7 @@
     "route53-zone-file-exporter": "./bin/route53-zone-file-exporter"
   },
   "dependencies": {
-    "aws-sdk": "2.503.0",
+    "aws-sdk": "2.814.0",
     "commander": "3.0.1",
     "zone-file": "1.0.0"
   },
